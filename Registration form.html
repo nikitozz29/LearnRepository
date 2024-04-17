@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link href="Registration form.css" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+        <h1>Регистрация</h1>
+        <div><input type="text" class="field" placeholder="Имя" required></div>
+        <div><input type="text" class="field" placeholder="Фамилия" required></div>
+        <div><input type="text" class="field" placeholder="Отчество"></div>
+        <div><input type="date" class="field" name="date_field" value="2024-04-17" min="2018-01-01"></div>
+        <div><input type="text" class="field" placeholder="Город проживания" required></div>
+        <div><input type="email" class="field" placeholder="Email" required></div>
+        <div><input type="number" class="field" placeholder="Номер телефона" required></div>
+        <div class="field">
+            <select name="sex" required>
+                <option value="">--Укажите ваш пол--</option>
+                <option value="Мужчина">Мужчина</option>
+                <option value="Женщина">Женщина</option>
+                <option value="Боевой вертолёт КА-52 Чёрная акула">Боевой вертолёт КА-52 Чёрная акула</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+                <option value="parrot">Parrot</option>
+                <option value="spider">Spider</option>
+                <option value="goldfish">Goldfish</option>
+                <option value="другое">другое</option>
+            </select>
+        </div>
+        <div><input type="password" class="field" placeholder="Пароль" required></div>
+        <div><input type="password" class="field" placeholder="Подтвердите пароль" required></div>
+        <div class="field">
+            <button type="button">Зарегистрироваться</button>
+        </div>
+    </div>
+
+</body>
+</html>
