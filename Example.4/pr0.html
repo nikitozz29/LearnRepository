@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8"> 
+	<title>AnimateBox</title>
+  <style>
+.square{
+width: 100px;
+height: 100px;
+margin: 20px auto;
+background-color: #D53BF7;
+animation-name: spin;
+animation-duration: 3s;
+animation-iteration-count: infinite; 
+animation-direction: reverse;
+} 
+.square2{
+position: absolute;
+width: 100px;
+height: 100px;
+margin: 20px auto;
+left: 20%;
+top:30%;
+background-color: #71F47D;
+animation-name: transform;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes transform {
+  0%{
+    border-radius: 0 0 0 0;
+  }
+25%{
+    border-radius: 50% 0 0 0;
+  }
+  
+50%{
+    border-radius: 50% 50% 0 0;
+  }
+75%{
+     border-radius: 50% 50% 50% 0;
+   }
+100%{
+  border-radius: 50% 50% 50% 50%;
+}
+}
+.circle{
+position: absolute;
+left: 50%;
+top:70%;
+width: 130px;
+height: 130px;
+border-radius: 75px;
+background-color: #F7AC55;
+animation-name: path;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes path {
+  0%,100% {
+    transform: translate(-150px, -150px);
+  }
+  25% {
+    transform: translate(150px, -150px); 
+  }
+  50% {
+    transform: translate(150px, 150px);
+    background-color: #55F7A4;
+  }
+  75% {
+    transform: translate(-150px, 150px);
+    background-color: #F755EC;
+  }
+}
+.square3{
+position: absolute;
+width: 200px;
+height: 100px;
+margin: 20px auto;
+left: 10%;
+top:10%;
+background-color: red;
+animation-name: transform1;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);   
+  }
+35%{
+    background-color: #4AEAFC;
+  }
+50%{
+  background-color: yellow;
+}
+100%{
+  transform: rotate(360deg);
+}
+}
+
+.square:hover{
+animation-play-state: paused;
+}
+    </style>
+</head>
+<body>
+<div class="square"></div>
+<div class="circle"></div>
+<div class="square2"></div>
+  <div class="square3"></div>
+</body>
+</html>
